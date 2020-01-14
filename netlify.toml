@@ -1,0 +1,7 @@
+[build]
+  base = "./"
+  command = "" 
+  publish = "./src"
+
+[dev] 
+  publish = "./src" # Folder with the static content for _redirect file
