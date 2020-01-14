@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# sensitive
+getAPIData.html 
+
+# Logs
+logs
+*.log
+
+# Local Netlify folder
+.netlify
