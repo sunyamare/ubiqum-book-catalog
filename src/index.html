@@ -101,17 +101,29 @@
                 </div>
             </div>
 
-            <img
-                id="myImg"
-                src="https://preview.ibb.co/bC5ELQ/alex_min.png"
-                alt="Snow"
-                style="width:100%;max-width:300px"
-            />
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-                <span class="close">&times;</span>
-                <img class="modal-content" id="img01" />
-                <div id="caption"></div>
+            <!-- lightbox without JS from: https://codepen.io/iaian7/pen/KvveLr -->
+            <!-- thumbnail images wrapped in a link -->
+            <a class="thumbnail" href="#img1"
+                ><img src="http://placehold.it/200x250"
+            /></a>
+            <a class="thumbnail" href="#img2"
+                ><img src="http://placehold.it/200x250"
+            /></a>
+            <a class="thumbnail" href="#img3"
+                ><img src="http://placehold.it/200x250"
+            /></a>
+            <!-- lightbox containers hidden with CSS -->
+            <div class="lightbox animate" id="img1">
+                <a class="lightboxClose" href="#"><span>close</span></a>
+                <img class="animate" src="http://placehold.it/350x500" />
+            </div>
+            <div class="lightbox animate" id="img2">
+                <a class="lightboxClose" href="#"><span>close</span></a
+                ><img class="animate" src="http://placehold.it/350x500" />
+            </div>
+            <div class="lightbox animate" id="img3">
+                <a class="lightboxClose" href="#"><span>close</span></a
+                ><img class="animate" src="http://placehold.it/350x500" />
             </div>
         </section>
 

@@ -87,86 +87,58 @@ h3 {
     transform: rotateY(180deg);
 }
 
-/* Modal from: https://www.w3schools.com/howto/howto_css_modal_images.asp */
-#myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-#myImg:hover {
-    opacity: 0.7;
-}
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
+/* lightbox from https://codepen.io/iaian7/pen/KvveLr */
+.lightbox {
+    display: block;
+    position: fixed;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
 }
-.modal-content {
+.lightbox img {
     margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
-.modal-content,
-#caption {
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-@-webkit-keyframes zoom {
-    from {
-        -webkit-transform: scale(0);
-    }
-    to {
-        -webkit-transform: scale(1);
-    }
-}
-@keyframes zoom {
-    from {
-        transform: scale(0);
-    }
-    to {
-        transform: scale(1);
-    }
-}
-.close {
     position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 40%;
+    max-height: 40%;
+    border: 2px solid white;
+    box-sizing: border-box;
 }
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+.lightbox:target {
+    visibility: visible;
+    opacity: 1;
 }
-@media only screen and (max-width: 700px) {
-    .modal-content {
-        width: 100%;
-    }
+.lightbox:target img {
+    max-width: 95%;
+    max-height: 95%;
+}
+.lightboxClose {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.lightboxClose span {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 1px dotted #fff;
+    border-bottom: 1px dotted #fff;
+    padding: 5px;
+}
+.animate {
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -ms-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
 }
 
 /* footer */
