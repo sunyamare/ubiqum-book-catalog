@@ -12,24 +12,122 @@
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
-        <h1>Welcome to Ubiqum Book Catalog</h1>
-
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="./img/logo.png" alt="Avatar" />
+        <header>
+            <div class="container-header">
+                <div class="logo item">
+                    <img src="./img/logo.png" alt="Ubiqum Books Logo" />
                 </div>
-                <div class="flip-card-back">
-                    <h1>John Doe</h1>
-                    <p>Architect & Engineer</p>
-                    <p>We love that guy</p>
+                <div class="search item">
+                    <span>Search ...</span>
+                    <input />
                 </div>
             </div>
-        </div>
+        </header>
 
-        <!-- flip cards: https://www.w3schools.com/howto/howto_css_flip_card.asp -->
-        <!-- modal instead of lightbox: https://www.w3schools.com/howto/howto_css_modal_images.asp -->
-        <!-- When doing HOVER on each of the covers, it must be rotated to show the title, the description and a “More Info” button (This effect is just CSS. Google is your friend). This button will take you to a more detailed image (“detalle” in the json) of the cover (not the same image) that should be shown in a LIGHTBOX (popup/modal) and NOT in another website (use FancyBox). -->
+        <section>
+            <div class="title">
+                <h1>Welcome to Ubiqum Books, your interactive Book Catalog</h1>
+            </div>
+            <div class="container">
+                <div class="flip-card item">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img
+                                src="https://preview.ibb.co/bC5ELQ/alex_min.png"
+                                alt="Book Cover"
+                            />
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>John Doe</h1>
+                            <p>Architect & Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card item">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img
+                                src="https://preview.ibb.co/bC5ELQ/alex_min.png"
+                                alt="Book Cover"
+                            />
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>John Doe</h1>
+                            <p>Architect & Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card item">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img
+                                src="https://preview.ibb.co/bC5ELQ/alex_min.png"
+                                alt="Book Cover"
+                            />
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>John Doe</h1>
+                            <p>Architect & Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card item">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img
+                                src="https://preview.ibb.co/bC5ELQ/alex_min.png"
+                                alt="Book Cover"
+                            />
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>John Doe</h1>
+                            <p>Architect & Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card item">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img
+                                src="https://preview.ibb.co/bC5ELQ/alex_min.png"
+                                alt="Book Cover"
+                            />
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>John Doe</h1>
+                            <p>Architect & Engineer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img
+                id="myImg"
+                src="https://preview.ibb.co/bC5ELQ/alex_min.png"
+                alt="Snow"
+                style="width:100%;max-width:300px"
+            />
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01" />
+                <div id="caption"></div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="site-notice">
+                <span>
+                    Site notice: This is a demo page! Contact:
+                    <a
+                        href="https://sunyamare.ch/"
+                        target="_blank"
+                        rel="noopener"
+                        >sunyamare.ch</a
+                    >
+                </span>
+            </div>
+        </footer>
 
         <script src="./js/functions.js"></script>
     </body>
