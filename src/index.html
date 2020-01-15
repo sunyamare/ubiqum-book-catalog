@@ -4,12 +4,36 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="author" content="Thomas - sunyamare.ch" />
+        <meta name="description" content="Ubiqum Books: Ubiqum Book Catalog" />
+        <meta name="keywords" content="Ubiqum, Books, Catalog, React" />
+        <meta name="robots" content="index, follow" />
         <title>Ubiqum Book Catalog</title>
+        <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
         <h1>Welcome to Ubiqum Book Catalog</h1>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img
+                        src="img_avatar.png"
+                        alt="Avatar"
+                        style="width:300px;height:300px;"
+                    />
+                </div>
+                <div class="flip-card-back">
+                    <h1>John Doe</h1>
+                    <p>Architect & Engineer</p>
+                    <p>We love that guy</p>
+                </div>
+            </div>
+        </div>
+
         <!-- flip cards: https://www.w3schools.com/howto/howto_css_flip_card.asp -->
         <!-- modal instead of lightbox: https://www.w3schools.com/howto/howto_css_modal_images.asp -->
+        <!-- When doing HOVER on each of the covers, it must be rotated to show the title, the description and a “More Info” button (This effect is just CSS. Google is your friend). This button will take you to a more detailed image (“detalle” in the json) of the cover (not the same image) that should be shown in a LIGHTBOX (popup/modal) and NOT in another website (use FancyBox). -->
 
         <script src="./js/functions.js"></script>
     </body>
