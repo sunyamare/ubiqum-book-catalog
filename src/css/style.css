@@ -102,12 +102,11 @@ label {
 .flip-card {
     background-color: transparent;
     width: 220px;
-    height: 314.1875px;
-    perspective: 1000px;
+    height: 314.19px;
 }
 .flip-card-front img {
     width: 220px;
-    height: 314.1875px;
+    height: 314.19px;
 }
 .flip-card-inner {
     position: relative;
