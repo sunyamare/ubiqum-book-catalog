@@ -49,11 +49,12 @@ h1 {
 .logo img {
     max-width: 150px;
     padding-right: 10px;
-    width: 80%;
+    width: 90%;
 }
 /* search */
 .search {
     margin-right: 25px;
+    text-align: center;
 }
 #searchbar {
     padding: 10px;
@@ -63,6 +64,11 @@ input[type="text"] {
     width: 100%;
     -webkit-transition: width 0.1s ease-in-out;
     transition: width 0.1s ease-in-out;
+    font-size: 1rem;
+}
+label {
+    padding-left: 25px;
+    color: #3a3a3a;
     font-size: 1rem;
 }
 
