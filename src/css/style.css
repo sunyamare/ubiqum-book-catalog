@@ -158,29 +158,45 @@ label {
     right: 0;
     bottom: 0;
 }
+.lightbox a {
+    color: #fff;
+}
 .lightbox:target {
     visibility: visible;
     opacity: 1;
 }
 .lightbox:target img {
     max-width: 95%;
-    max-height: 95%;
+    max-height: 82%;
 }
-.lightboxClose {
+.lightboxClose,
+.lightboxPrev,
+.lightboxNext {
     display: block;
     width: 100%;
     height: 100%;
 }
-.lightboxClose span {
+.lightboxClose span,
+.lightboxPrev span,
+.lightboxNext span {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
-    border-left: 1px dotted #fff;
-    border-bottom: 1px dotted #fff;
     padding: 9px 13px;
     color: white;
     background-color: #272727;
+    width: 12px;
+}
+.lightboxClose span {
+    top: 2px;
+    right: 2px;
+}
+.lightboxPrev span {
+    top: 2px;
+    right: 82px;
+}
+.lightboxNext span {
+    top: 2px;
+    right: 42px;
 }
 .animate {
     -webkit-transition: 0.25s ease-in-out;
@@ -205,4 +221,22 @@ footer a {
 .site-notice {
     margin: 0 auto;
     width: fit-content;
+}
+
+@media only screen and (min-width: 700px) {
+    .lightboxClose span {
+        top: 2px;
+        right: 2px;
+    }
+    .lightboxPrev span {
+        top: 62px;
+        right: 2px;
+    }
+    .lightboxNext span {
+        top: 122px;
+        right: 2px;
+    }
+    .lightbox:target img {
+        max-height: 95%;
+    }
 }
