@@ -16,16 +16,29 @@ apiCall().then(
     )
 );
 
-function findContent() {
+// search function from https://www.geeksforgeeks.org/search-bar-using-html-css-and-javascript/ (quite altered)
+const findContent = () => {
     let input = document.getElementById("searchbar").value;
     input = input.toLowerCase();
-    let x = document.getElementsByClassName("animals");
+    const indexedTitle = document.getElementsByClassName("indexedTitle");
+    const indexedDesc = document.getElementsByClassName("indexedDesc");
+    const flipCards = document.getElementsByClassName("flip-card");
 
-    for (i = 0; i < x.length; i++) {
-        if (!x[i].innerHTML.toLowerCase().includes(input)) {
-            x[i].style.display = "none";
+    for (i = 0; i < indexedTitle.length; i++) {
+        const indexedContent =
+            indexedTitle[i].innerHTML + indexedDesc[i].innerHTML;
+        console.log(indexedContent);
+        if (!indexedContent.toLowerCase().includes(input)) {
+            flipCards[i].style.display = "none";
         } else {
-            x[i].style.display = "list-item";
+            flipCards[i].style.display = "block";
         }
     }
-}
+};
+
+// go to index#! if escape is presses (to close image detail view)
+document.addEventListener("keydown", event => {
+    if (event.key === "Escape") {
+        window.location.replace("index.html#!");
+    }
+});
