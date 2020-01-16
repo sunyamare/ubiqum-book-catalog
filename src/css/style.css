@@ -17,6 +17,9 @@ h3 {
     line-height: 1.2;
     margin-top: 0;
 }
+h1 {
+    text-align: center;
+}
 
 /* book title, desc and button styling */
 .title {
