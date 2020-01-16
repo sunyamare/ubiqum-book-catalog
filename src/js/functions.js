@@ -43,6 +43,6 @@ const findContent = () => {
 // go to index#! if escape is presses (to close image detail view)
 document.addEventListener("keydown", event => {
     if (event.key === "Escape") {
-        window.location.replace("index.html#!");
+        window.location.replace("#!");
     }
 });
