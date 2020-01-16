@@ -12,9 +12,20 @@ async function apiCall() {
 let data = [];
 apiCall().then(
     result => (
-        console.log("done fetching"), (data = result.books), console.log(data)
+        console.log("done fetching"), (data = result.books), buildHTML(data)
     )
 );
+
+// build html content
+const buildHTML = data => {
+    console.log(data);
+    let contentSection = document.getElementById("contentSection");
+    for (let i = 0; i < data.length; i++) {
+        const content = `<div class='flip-card item'> <div class='flip-card-inner'> <div class='flip-card-front'> <img src='${data[i].cover}' alt='Book Cover'/> </div><div class='flip-card-back'> <div class='book-info'> <p class='title indexedTitle'>${data[i].title}</p><p class='desc indexedDesc indexedContent'>${data[i].description}</p><p> <a class='button' href='#img${i}' >Large Cover</a > </p></div></div></div></div><div class='lightbox animate' id='img${i}'> <a class='lightboxClose' href='#!'><span>close</span></a> <img class='animate' src='${data[i].detail}'/> </div>`;
+        const html = new DOMParser().parseFromString(content, "text/html");
+        contentSection.innerHTML += html.firstChild.innerHTML;
+    }
+};
 
 // search function from https://www.geeksforgeeks.org/search-bar-using-html-css-and-javascript/ (quite altered)
 const findContent = () => {
