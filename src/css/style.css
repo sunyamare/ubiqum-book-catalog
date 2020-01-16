@@ -40,12 +40,27 @@ h3 {
 }
 
 /* logo */
+.logo {
+    margin-bottom: -20px;
+}
 .logo img {
-    width: 150px;
+    max-width: 150px;
+    padding-right: 10px;
+    width: 80%;
 }
 /* search */
 .search {
-    width: 150px;
+    margin-right: 25px;
+}
+#searchbar {
+    padding: 10px;
+    border-radius: 10px;
+}
+input[type="text"] {
+    width: 100%;
+    -webkit-transition: width 0.1s ease-in-out;
+    transition: width 0.1s ease-in-out;
+    font-size: 1rem;
 }
 
 /* flexbox header */

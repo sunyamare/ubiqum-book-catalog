@@ -18,8 +18,13 @@
                     <img src="./img/logo.png" alt="Ubiqum Books Logo" />
                 </div>
                 <div class="search item">
-                    <span>Search ...</span>
-                    <input />
+                    <input
+                        id="searchbar"
+                        onkeyup="findContent()"
+                        type="text"
+                        name="search"
+                        placeholder="Search.."
+                    />
                 </div>
             </div>
         </header>
