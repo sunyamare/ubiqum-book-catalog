@@ -1,4 +1,4 @@
-# ubiqum-react-book-catalog
+# ubiqum-book-catalog
 
 Ubiqum MERN bootcamp 3rd project: build a very basic VanillaJS book catalog
 
