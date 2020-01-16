@@ -96,12 +96,12 @@ input[type="text"] {
 .flip-card {
     background-color: transparent;
     width: 220px;
-    height: 330px;
+    height: 342.375px;
     perspective: 1000px;
 }
 .flip-card-front img {
     width: 220px;
-    height: 330px;
+    height: 342.375px;
 }
 .flip-card-inner {
     position: relative;
