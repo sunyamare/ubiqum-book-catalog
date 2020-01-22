@@ -1,242 +1,235 @@
 html {
-    background-color: #fff9493d;
+  background-color: #fff9493d;
 }
 body {
-    background-color: #fff;
-    margin: auto;
-    max-width: 960px;
-    line-height: 1.6;
-    font-size: 18px;
-    color: rgb(50, 50, 50);
-    padding: 0 10px;
-    font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: auto;
+  max-width: 960px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: rgb(50, 50, 50);
+  padding: 0 10px;
+  font-family: Arial, sans-serif;
 }
 h1,
 h2,
 h3 {
-    line-height: 1.2;
-    margin-top: 0;
+  line-height: 1.2;
+  margin-top: 0;
 }
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 /* book title, desc and button styling */
 .title {
-    font-size: 1.2rem;
-    font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 .desc {
-    font-size: 0.9rem;
-    margin: 0 5%;
+  font-size: 0.9rem;
+  margin: 0 5%;
 }
 .button {
-    font-size: 1rem;
-    padding: 8px 10px;
-    margin: 3px 0 0 0;
-    border: 1px dotted #fff;
-    color: #fff;
-    text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 10px;
+  margin: 3px 0 0 0;
+  border: 1px dotted #fff;
+  color: #fff;
+  text-decoration: none;
 }
 .button:hover {
-    background-color: #0000001f;
+  background-color: #0000001f;
 }
 
 /* logo */
 .logo {
-    margin-bottom: -20px;
+  margin-bottom: -20px;
 }
 .logo img {
-    max-width: 150px;
-    padding-right: 10px;
-    width: 90%;
+  max-width: 150px;
+  padding-right: 10px;
+  width: 90%;
 }
 /* search */
 .search {
-    margin-right: 25px;
-    text-align: center;
+  margin-right: 25px;
+  text-align: center;
 }
 #searchbar {
-    padding: 10px;
-    border-radius: 10px;
+  padding: 10px;
+  border-radius: 10px;
 }
 input[type="text"] {
-    width: 100%;
-    -webkit-transition: width 0.1s ease-in-out;
-    transition: width 0.1s ease-in-out;
-    font-size: 1rem;
+  width: 100%;
+  -webkit-transition: width 0.1s ease-in-out;
+  transition: width 0.1s ease-in-out;
+  font-size: 1rem;
 }
 label {
-    padding-left: 25px;
-    color: #3a3a3a;
-    font-size: 1rem;
+  padding-left: 25px;
+  color: #3a3a3a;
+  font-size: 1rem;
 }
 
 /* flexbox header */
 .container-header {
-    display: flex; /* or inline-flex */
-    justify-content: space-between;
-    align-items: center;
+  display: flex; /* or inline-flex */
+  justify-content: space-between;
+  align-items: center;
 }
 .container-header .item {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 /* flexbox content */
 .container {
-    display: flex; /* or inline-flex */
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex; /* or inline-flex */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .container .item {
-    margin: 0 1% 2% 1%;
+  margin: 0 1% 2% 1%;
 }
 
 .book-info {
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 /* flip cards from: https://www.w3schools.com/howto/howto_css_flip_card.asp */
 .flip-card {
-    background-color: transparent;
-    width: 220px;
-    height: 314.19px;
+  background-color: transparent;
+  width: 220px;
+  height: 314.19px;
 }
 .flip-card-front img {
-    width: 220px;
-    height: 314.19px;
+  width: 220px;
+  height: 314.19px;
 }
 .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.3s;
-    transform-style: preserve-3d;
-    transition-timing-function: ease-in;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.3s;
+  transform-style: preserve-3d;
+  transition-timing-function: ease-in;
 }
 .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 .flip-card-front,
 .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
 }
 .flip-card-front {
-    background-color: #bbb;
-    color: black;
+  background-color: #bbb;
+  color: black;
 }
 .flip-card-back {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: rgb(246, 246, 246);
-    transform: rotateY(180deg);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(246, 246, 246);
+  transform: rotateY(180deg);
 }
 
 /* lightbox from https://codepen.io/iaian7/pen/KvveLr (heavily adapted) */
 .lightbox {
-    display: block;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.6);
-    visibility: hidden;
-    opacity: 0;
-    z-index: 10;
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
 }
 .lightbox img {
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .lightbox a {
-    color: #fff;
+  color: #fff;
 }
 .lightbox:target {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 .lightbox:target img {
-    max-width: 95%;
-    max-height: 82%;
+  max-width: 95%;
+  max-height: 82%;
 }
 .lightboxClose,
 .lightboxPrev,
 .lightboxNext {
-    display: block;
-    width: 100%;
-    height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .lightboxClose span,
 .lightboxPrev span,
 .lightboxNext span {
-    display: block;
-    position: absolute;
-    padding: 9px 13px;
-    color: white;
-    background-color: #272727;
-    width: 12px;
+  display: block;
+  position: absolute;
+  padding: 9px 13px;
+  color: white;
+  background-color: #272727;
+  width: 12px;
 }
 .lightboxClose span {
-    top: 2px;
-    right: 2px;
+  top: 2px;
+  right: 2px;
 }
 .lightboxPrev span {
-    top: 2px;
-    right: 82px;
+  top: 2px;
+  right: 82px;
 }
 .lightboxNext span {
-    top: 2px;
-    right: 42px;
-}
-.animate {
-    -webkit-transition: 0.25s ease-in-out;
-    -moz-transition: 0.25s ease-in-out;
-    -ms-transition: 0.25s ease-in-out;
-    -o-transition: 0.25s ease-in-out;
-    transition: 0.25s ease-in-out;
+  top: 2px;
+  right: 42px;
 }
 
 /* footer */
 footer {
-    background-color: #dededecc;
-    height: 30px;
-    margin: 5px -10px 0 -10px;
+  background-color: #dededecc;
+  height: 30px;
+  margin: 5px -10px 0 -10px;
 }
 footer span {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 footer a {
-    color: rgb(28, 28, 28);
+  color: rgb(28, 28, 28);
 }
 .site-notice {
-    margin: 0 auto;
-    width: fit-content;
+  margin: 0 auto;
+  width: fit-content;
 }
 
 @media only screen and (min-width: 700px) {
-    .lightboxClose span {
-        top: 2px;
-        right: 2px;
-    }
-    .lightboxPrev span {
-        top: 62px;
-        right: 2px;
-    }
-    .lightboxNext span {
-        top: 122px;
-        right: 2px;
-    }
-    .lightbox:target img {
-        max-height: 95%;
-    }
+  .lightboxClose span {
+    top: 2px;
+    right: 2px;
+  }
+  .lightboxPrev span {
+    top: 62px;
+    right: 2px;
+  }
+  .lightboxNext span {
+    top: 122px;
+    right: 2px;
+  }
+  .lightbox:target img {
+    max-height: 95%;
+  }
 }
